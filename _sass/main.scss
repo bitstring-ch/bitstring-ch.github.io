@@ -1,0 +1,119 @@
+html,body {
+    margin: 0;
+    background: #BFBFBF;
+    font-family: 'Roboto', sans-serif;
+}
+
+p,h1,h2,h3 {
+    margin-left: 3px;
+}
+
+p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.topic {
+    margin-left: 0;
+    display: block;
+    width: 18em;
+    background: black;
+    color: white;
+}
+
+.description {
+    font-family: serif;
+    font-style: italic;
+    font-size: 17px;
+    margin-left: 8em;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#topbar {
+    color: white;
+    background: black;
+}
+
+#topbar:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#topbar #brand {
+    float: left;
+    font-size: 15px;
+}
+
+.logo {
+    font-family: 'Days One', sans-serif;
+    font-weight: normal;
+}
+
+#topbar .subtitle {
+    font-size: 15px;
+    text-align: left;
+    padding: 0 4px;
+}
+
+#topbar .logo {
+    font-size: 18px;
+    text-align: left;
+    padding: 3px 6px 3px 3px;
+}
+
+#topbar nav {
+    float: right;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: right;
+    padding: 3px 0;
+}
+
+nav a {
+    color: white;
+    padding: 3px 3px 3px 5px;
+    text-decoration: none;
+}    
+
+.subtitle {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#splash_container {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+#splash {
+    margin: 0;
+    width: 1600px;
+    margin-left: 50%;
+    transform: translateX(-800px);
+}
+
+a.current {
+    color: gray;
+}
