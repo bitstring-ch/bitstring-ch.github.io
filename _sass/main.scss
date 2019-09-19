@@ -60,38 +60,121 @@ h2 {
     display: block;
 }
 
-#topbar #brand {
-    float: left;
-    font-size: 15px;
+@media (max-width: 799px) {
+    nav a {
+	color: white;
+    }
+    
+    a.current {
+	color: black;
+    }
+    
+    .description {
+	margin-left: 3em;
+    }
+
+    #splash_container {
+	height: 15%;
+    }
+
+    #topbar #brand {
+	font-size: 18px;
+    }
+
+    #topbar span {
+	display: block;
+    }
+
+    #topbar span.separator {
+	display: none;
+    }
+        
+    .logo {
+	font-family: 'Days One', sans-serif;
+	font-weight: normal;
+    }
+
+    #topbar .subtitle {
+	font-size: 15px;
+	text-align: left;
+	padding: 0 4px;
+    }
+
+    #topbar .logo {
+	font-size: 22px;
+	text-align: left;
+	padding: 3px 6px 3px 3px;
+    }
+
+    #topbar nav {
+	background: #BFBFBF;
+	margin-top: 8px;
+	font-weight: normal;
+	font-size: 17px;
+	text-align: left;
+	padding: 3px 0;
+    }
+    
+    #splash {
+	margin: 0;
+	width: 800px;
+	margin-left: 50%;
+	transform: translateX(-400px);
+    }
 }
 
-.logo {
-    font-family: 'Days One', sans-serif;
-    font-weight: normal;
-}
+@media (min-width: 800px) {
+    nav a {
+	color: white;
+    }
 
-#topbar .subtitle {
-    font-size: 15px;
-    text-align: left;
-    padding: 0 4px;
-}
+    a.current {
+	color: gray;
+    }
 
-#topbar .logo {
-    font-size: 18px;
-    text-align: left;
-    padding: 3px 6px 3px 3px;
-}
+    .description {
+	margin-left: 8em;
+    }
 
-#topbar nav {
-    float: right;
-    font-weight: normal;
-    font-size: 15px;
-    text-align: right;
-    padding: 3px 0;
+    #topbar #brand {
+	float: left;
+	font-size: 15px;
+    }
+    .logo {
+	font-family: 'Days One', sans-serif;
+	font-weight: normal;
+    }
+
+    #topbar .subtitle {
+	font-size: 15px;
+	text-align: left;
+	padding: 0 4px;
+    }
+
+    #topbar .logo {
+	font-size: 18px;
+	text-align: left;
+	padding: 3px 6px 3px 3px;
+    }
+
+    #topbar nav {
+	background: black;
+	float: right;
+	font-weight: normal;
+	font-size: 15px;
+	text-align: right;
+	padding: 3px 0;
+    }
+    
+    #splash {
+	margin: 0;
+	width: 1600px;
+	margin-left: 50%;
+	transform: translateX(-800px);
+    }
 }
 
 nav a {
-    color: white;
     padding: 3px 3px 3px 5px;
     text-decoration: none;
 }    
@@ -105,15 +188,4 @@ nav a {
     width: 100%;
     overflow: hidden;
     margin: 0;
-}
-
-#splash {
-    margin: 0;
-    width: 1600px;
-    margin-left: 50%;
-    transform: translateX(-800px);
-}
-
-a.current {
-    color: gray;
 }
