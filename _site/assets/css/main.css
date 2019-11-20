@@ -1,52 +1,83 @@
-html, body { margin: 0; background: #BFBFBF; font-family: 'Roboto', sans-serif; }
+@charset "UTF-8";
+* { box-sizing: border-box; }
 
-p, h1, h2, h3 { margin-left: 3px; }
+html, body { margin: 0; background: #242424; font-family: 'Roboto', sans-serif; }
+
+#centered_content { max-width: 1596px; background: #242424; margin: auto; display: flex; flex-direction: column; }
+
+#splash { margin: 0; width: 2400px; margin-left: 50%; transform: translateX(-1200px); }
+
+p, h1, h2, h3 { margin-left: 5px; }
 
 p { margin-top: 12px; margin-bottom: 12px; }
 
 a { text-decoration: none; color: white; }
 
-.topic { margin-left: 0; display: block; width: 18em; background: black; color: white; }
+h2 { font-family: 'Days One', sans-serif; font-weight: normal; font-size: 15px; margin: 10px 0 0 0; padding: 0 3px 3px 3px; display: block; width: 100%; background: black; color: white; }
 
-.description { font-family: 'IBM Plex Serif', serif; font-style: italic; font-size: 15px; margin-left: 8em; margin-right: auto; }
+.topic_box { width: 40em; font-family: 'IBM Plex Serif', serif; font-style: regular; font-size: 15px; color: white; background: #242424; margin: 0; padding: 0; }
+
+#vision { height: 240px; margin: 0; color: white; display: flex; flex-direction: column; justify-content: center; }
+
+#values { display: flex; justify-content: flex-start; align-content: center; flex-wrap: wrap; }
+
+.value { margin: 0; opacity: 70%; }
+
+.value:hover { opacity: 100%; cursor: pointer; }
+
+.value img { width: 228px; }
+
+blockquote { text-indent: 4em; margin: 30px 2em; font-family: 'IBM Plex Serif', serif; font-style: regular; font-size: 20px; }
+
+blockquote::before { content: "“"; }
+
+blockquote::after { content: "„"; }
+
+.tooltip { position: relative; }
+
+.tooltip-text { position: absolute; top: 0%; left: 0%; z-index: 1; visibility: hidden; font-family: 'IBM Plex Serif', serif; font-style: italic; font-size: 15px; color: white; background-color: #B0623F; border-radius: 6px; padding: 6px 15px; opacity: 80%; }
+
+.tooltip:hover .tooltip-text { visibility: visible; }
+
+#desc_consulting { background-image: url("/assets/images/stripes/consulting.jpeg"); background-repeat: no-repeat; background-color: #242424; }
+
+.topic_box img { display: block; width: 100%; border: 0; margin: 0; padding: 0; }
 
 h1 { font-size: 20px; font-weight: bold; }
 
 h2 { font-size: 18px; font-weight: bold; }
 
-h2 { font-size: 16px; font-weight: bold; }
+.value h3 { margin: 0; font-size: 15px; font-weight: normal; color: white; background: black; }
 
-#topbar { color: white; background: black; }
+#topbar { color: white; background: black; display: flex; }
 
-#topbar:after { content: ""; clear: both; display: block; }
+#splash-container { background: black; }
+
+nav { flex: 1; }
 
 @media (max-width: 799px) { nav a { color: white; }
   a.current { color: black; }
-  .description { margin-left: 3em; }
-  #splash_container { height: 15%; }
+  #splash-container { height: 15%; }
   #topbar #brand { font-size: 18px; }
   #topbar span { display: block; }
   #topbar span.separator { display: none; }
   .logo { font-family: 'Days One', sans-serif; font-weight: normal; }
-  #topbar .subtitle { font-size: 15px; text-align: left; padding: 0 4px; }
+  .subtitle { font-size: 15px; text-align: left; padding: 0 4px; }
   #topbar .logo { font-size: 22px; text-align: left; padding: 3px 6px 3px 3px; }
-  #topbar nav { background: #BFBFBF; margin-top: 8px; font-weight: normal; font-size: 17px; text-align: left; padding: 3px 0; }
-  #splash { margin: 0; width: 800px; margin-left: 50%; transform: translateX(-400px); } }
+  #topbar nav { background: #BFBFBF; margin-top: 8px; font-weight: normal; font-size: 17px; text-align: left; padding: 3px 0; } }
 
 @media (min-width: 800px) { nav a { color: white; }
   a.current { color: gray; }
-  .description { margin-left: 8em; }
-  #topbar #brand { float: left; font-size: 15px; }
+  #topbar #brand { font-size: 15px; }
   .logo { font-family: 'Days One', sans-serif; font-weight: normal; }
   #topbar .subtitle { font-size: 15px; text-align: left; padding: 0 4px; }
   #topbar .logo { font-size: 18px; text-align: left; padding: 3px 6px 3px 3px; }
-  #topbar nav { background: black; float: right; font-weight: normal; font-size: 15px; text-align: right; padding: 3px 0; }
-  #splash { margin: 0; width: 1600px; margin-left: 50%; transform: translateX(-800px); } }
+  #topbar nav { background: black; font-weight: normal; font-size: 15px; text-align: right; padding: 3px 0; } }
 
 nav a { padding: 3px 3px 3px 5px; text-decoration: none; }
 
 .subtitle { font-weight: bold; font-size: 16px; }
 
-#splash_container { width: 100%; overflow: hidden; margin: 0; }
+#splash-container { width: 100%; overflow: hidden; margin: 0; }
 
 /*# sourceMappingURL=main.css.map */

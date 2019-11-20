@@ -9,10 +9,12 @@
     <meta name="google-site-verification" content="t4rkypfwZl_4fQ4vz5BzPSjWZgiRLn-nKVvRvD-ufp4" />
   </head>
   <body>
-    <header id='topbar'>
-      {% include brand.html %}
-      {% include navigation.html %}
-    </header>
-    {{ content }}
+    <div id='centered_content'>
+      <header id='topbar'>
+	{% include brand.html %}
+	{% include navigation.html %}
+      </header>
+      {{ content }}
+    </div>
   </body>
 </html>

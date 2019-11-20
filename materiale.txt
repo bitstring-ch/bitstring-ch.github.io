@@ -1,0 +1,36 @@
+  <h2>Offer</h2>
+  <h3>Development</h3>
+  <p>Sometimes, pressing business needs push development teams to the edge: despite agile
+    methodologies, modern architectures and top skills, priorities can't always align
+    to stakeholder desires.
+    Or maybe capacity is not the issue, but incorporating a non-core technology,
+    which is required only for a specific module or functionality, is not the most
+    efficient way to leverage the in-house team.
+    We can complement our client's team with research and development of specific aspects
+    or portions of a development project.
+    Our extensive experience and the constant effort to keep up with the latest frameworks
+    and methodologies will assure a timely and effective delivery of business relevant
+    functionalities.
+    Special attention to writing clean code, comprehensive test and documentation
+    means seamlessy incorporating and maintaining the new material in the existing code
+    life-cycle.</p>
+  <h3>Consulting</h3>
+  <p>Knowledge is power.
+    There are cases when new or little known technologies can make the difference.
+    Even the best team, equipped with the latest technology stack, when
+    confronted with a new project, can benefit from a fresh look from the outside.
+    Especially when it's from hard-core technologists with hands-on experience on many
+    successful projects.
+    The technological acceleration of the latest years in software development, with the
+    re-appearance of functional programming, the new offer of <emph>serverless</emph>
+    solutions coupled with the growth of the capabilities within the browser, cause fast
+    obsolescence of technological stacks, unexpected opportunities, and a constant need to
+    question the existing software architecture paradigms.
+    Only a pragmatic approach, together with the ability to find good practices beyond the
+    hype, will help putting a development project on stable architectural ground,
+    and being able to reap the benefits of new technologies when sensible, while hedging the
+    inevitable risks.
+    We can offer a leading edge perspective acquired in top-tier technical environments, a
+    very diverse experience in multiple business areas, and a critical evaluation of the
+    latest technological trends.
+  </p>
