@@ -1,0 +1,59 @@
+observe:
+  title: Observe real life
+  firstLine: "Once in a while what you have in mind, as you enter a room full of people, 
+  	     is exactly what they need. Most often, though, it's not."
+  otherLines:
+  - "Agility means the ability to quickly abdapt the development process to an evolving 
+    environment. 
+    But there is an evolution which is an order of magnitude faster than the change in 
+    the business requirements: it's your comprehension of the business, of the interactions 
+    between its entities, of the informal human knowledge that, eventually, will (need to) 
+    be formalised and, somehow, become code."
+  - "The amount of pain and disappointment in the process depends on your ability to 
+    observe. Becoming aware: what is external of you, the scope of the project; and what 
+    happens in your brain, while you observe."
+  - "What exists right now, before projecting any ideas on it, is a humble seed of
+    knowledge that, when discovered in time, will protect and guide all new inventions."
+
+ambitions:
+  title: "Need, ambitions, expectations"
+  firstLine: "E Pippo pippo non lo sa"
+  otherLines:
+  - "Che quando passa"
+  - "ride tutta la citta'"
+
+constraints:
+  title: Assess current constraints
+  firstLine: "E Pippo pippo non lo sa"
+  otherLines:
+  - "Che quando passa"
+  - "ride tutta la citta'"
+
+design:
+  title: A beautiful design
+  firstLine: "E Pippo pippo non lo sa"
+  otherLines:
+  - "Che quando passa"
+  - "ride tutta la citta'"
+
+metal:
+  title: Everything runs on metal
+  firstLine: "E Pippo pippo non lo sa"
+  otherLines:
+  - "Che quando passa"
+  - "ride tutta la citta'"
+
+people:
+  title: Everything runs on people
+  firstLine: "E Pippo pippo non lo sa"
+  otherLines:
+  - "Che quando passa"
+  - "ride tutta la citta'"
+
+simple:
+  title: Keep it simple, replay
+  image: /assets/images/simple.jpeg
+  firstLine: "E Pippo pippo non lo sa"
+  otherLines:
+  - "Che quando passa"
+  - "ride tutta la citta'"

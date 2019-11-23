@@ -1,0 +1,11 @@
+{% assign v = site.data.values[include.key] %}
+<article>
+  <header>
+    <h2>{{ v.title }}</h2>
+    <img src="/assets/images/{{ include.key }}.jpeg" />
+  </header>
+  <p>{{ v.firstLine }}</p>
+  {% for v_line in v.otherLines %}
+  <p>{{ v_line }}</p>
+  {% endfor %}
+</article>

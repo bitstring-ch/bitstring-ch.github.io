@@ -3,6 +3,12 @@
 
 html, body { margin: 0; background: #242424; font-family: 'Roboto', sans-serif; }
 
+#topbar { color: white; background: black; display: flex; }
+
+#splash-container { background: black; }
+
+nav { flex: 1; }
+
 #centered_content { max-width: 1596px; background: #242424; margin: auto; display: flex; flex-direction: column; }
 
 #splash { margin: 0; width: 2400px; margin-left: 50%; transform: translateX(-1200px); }
@@ -13,7 +19,9 @@ p { margin-top: 12px; margin-bottom: 12px; }
 
 a { text-decoration: none; color: white; }
 
-h2 { font-family: 'Days One', sans-serif; font-weight: normal; font-size: 15px; margin: 10px 0 0 0; padding: 0 3px 3px 3px; display: block; width: 100%; background: black; color: white; }
+h1 { font-size: 20px; font-weight: bold; }
+
+h2 { font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: normal; margin: 0; padding: 0 5px; color: white; background: black; }
 
 #vision { height: 180px; margin: 40px 0 0 0; color: white; display: flex; flex-direction: column; justify-content: center; }
 
@@ -27,7 +35,17 @@ h2 { font-family: 'Days One', sans-serif; font-weight: normal; font-size: 15px; 
 
 #values header img { width: 228px; }
 
-#values summary { order: 1; width: 100%; height: 40px; margin: 0 auto 40px; color: #D0D0D0; font-family: 'IBM Plex Serif', serif; font-style: regular; font-size: 15px; opacity: 0; transition: opacity 1s; }
+summary, article { margin: 0 auto 40px; color: #D0D0D0; font-family: 'IBM Plex Serif', serif; font-style: regular; font-size: 15px; text-align: justify; }
+
+article { margin-top: 20px; }
+
+article header { width: 50%; }
+
+article header img { width: 100%; margin: 0 10px 10px 0; }
+
+article p { margin: 0 10px 10px 10px; }
+
+#values summary { order: 1; width: 100%; height: 40px; opacity: 0; transition: opacity 1s; }
 
 #values summary p { margin: 0 auto; display: none; text-align: center; }
 
@@ -43,19 +61,7 @@ blockquote::after { content: "„"; }
 
 .tooltip:hover .tooltip-text { opacity: 0.8; }
 
-h1 { font-size: 20px; font-weight: bold; }
-
-h2 { font-size: 18px; font-weight: bold; }
-
-#values header h3 { margin: 0; padding: 0 5px; font-size: 15px; font-weight: normal; color: white; background: black; }
-
 summary p { margin: 0.3em 0 0 0; }
-
-#topbar { color: white; background: black; display: flex; }
-
-#splash-container { background: black; }
-
-nav { flex: 1; }
 
 @media (max-width: 799px) { nav a { color: white; }
   a.current { color: black; }
@@ -86,7 +92,7 @@ article img { float: left; }
 
 #observe-header:hover ~ summary #observe-preview { display: block; }
 
-#need-header:hover ~ summary #need-preview { display: block; }
+#ambitions-header:hover ~ summary #ambitions-preview { display: block; }
 
 #constraints-header:hover ~ summary #constraints-preview { display: block; }
 
