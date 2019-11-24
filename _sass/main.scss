@@ -2,7 +2,6 @@ $base-background: #242424;
 $link-color: white;
 $brick-color: #B0623F;
 $patchwork-color: #878C54;
-$quote-color: #cfc257;
 $margin-row: 5px;
 
 * {
@@ -15,26 +14,78 @@ html,body {
     font-family: 'Roboto', sans-serif;
 }
 
+p,h1,h2,h3 {
+    margin-left: $margin-row;
+}
+
+a {
+    text-decoration: none;
+    color: $link-color;
+}
+
+a.current {
+    color: gray;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0 $margin-row;
+    color: white;
+    background: black;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
 #topbar {
     color: white;
     background: black;
     display: flex;
+    align-items: center;
+    padding: 0 $margin-row;
+}
+
+#topbar #brand {
+    font-size: 15px;
+}
+
+#topbar nav {
+    flex: 1;
+    background: black;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: right;
+    padding: 3px 0;    
+}
+
+#topbar nav a {
+    padding: 3px 3px 3px 5px;
+    text-decoration: none;
+}    
+
+.logo {
+    font-family: 'Days One', sans serif;
+    font-weight: normal;
+}
+
+#topbar .subtitle {
+    font-size: 15px;
+    text-align: left;
+    padding: 0 4px;
 }
 
 #splash-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
     background: black;
-}
-
-nav {
-    flex: 1;
-}
-
-#centered_content {
-    max-width: 1596px;
-    background: $base-background;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
 }
 
 #splash {
@@ -44,124 +95,12 @@ nav {
     transform: translateX(-1200px);
 }
 
-p,h1,h2,h3 {
-    margin-left: $margin-row;
-}
-
-p {
-    margin-top: 12px;
-    margin-bottom: 12px;
-}
-
-a {
-    text-decoration: none;
-    color: $link-color;
-}
-
-h1 {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: normal;
-    margin: 0;
-    padding: 0 $margin-row;
-    color: white;
-    background: black;
-}
-
-#vision {
-    height: 180px;
-    margin: 40px 0 0 0;
-    color: white;
+#centered_content {
+    max-width: 1596px;
+    background: $base-background;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-
-#values {
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-#values header {
-    order: 2;
-    margin: 0;
-    opacity: 0.7;
-}
-
-#values header:hover {
-    opacity: 1;
-    cursor: pointer;
-}
-
-#values header:hover ~ summary {
-    opacity: 1;
-}
-
-#values header img {
-    width: 228px;
-}
-
-summary, article {
-    margin: 0 auto 40px;
-    color: #D0D0D0;
-    font-family: 'IBM Plex Serif', serif;
-    font-style: regular;
-    font-size: 15px;
-    text-align: justify;
-}
-
-article {
-    margin-top: 20px;
-}
-
-article header {
-    width: 50%;
-}
-
-article header img {
-    width: 100%;
-    margin: 0 10px 10px 0;
-}
-
-article p {
-    margin: 0 10px 10px 10px;
-}
-
-#values summary {
-    order: 1;
-    width: 100%;
-    height: 40px;
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-#values summary p {
-    margin: 0 auto;
-    display: none;
-    text-align: center;
-}
-
-blockquote {
-    text-indent: 2em;
-    margin: 30px 6em 30px 6em;
-    font-family: 'IBM Plex Serif', serif;
-    font-style: regular;
-    font-size: 20px;
-}
-
-blockquote::before {
-    content: "“";
-}
-   
-blockquote::after {
-    content: "„";
 }
 
 .tooltip {
@@ -186,146 +125,4 @@ blockquote::after {
 
 .tooltip:hover .tooltip-text {
     opacity: 0.8;
-}
-
-summary p {
-    margin: 0.3em 0 0 0;
-}
-
-@media (max-width: 799px) {
-    nav a {
-	color: white;
-    }
-    
-    a.current {
-	color: black;
-    }
-    
-    #splash-container {
-	height: 15%;
-    }
-
-    #topbar #brand {
-	font-size: 18px;
-    }
-
-    #topbar span {
-	display: block;
-    }
-
-    #topbar span.separator {
-	display: none;
-    }
-        
-    .logo {
-	font-family: 'Days One', sans-serif;
-	font-weight: normal;
-    }
-
-    .subtitle {
-	font-size: 15px;
-	text-align: left;
-	padding: 0 4px;
-    }
-
-    #topbar .logo {
-	font-size: 22px;
-	text-align: left;
-	padding: 3px 6px 3px 3px;
-    }
-
-    #topbar nav {
-	background: #BFBFBF;
-	margin-top: 8px;
-	font-weight: normal;
-	font-size: 17px;
-	text-align: left;
-	padding: 3px 0;
-    }
-}
-
-@media (min-width: 800px) {
-    nav a {
-	color: white;
-    }
-
-    a.current {
-	color: gray;
-    }
-
-    #topbar #brand {
-	font-size: 15px;
-    }
-    .logo {
-	font-family: 'Days One', sans-serif;
-	font-weight: normal;
-    }
-
-    #topbar .subtitle {
-	font-size: 15px;
-	text-align: left;
-	padding: 0 4px;
-    }
-
-    #topbar .logo {
-	font-size: 18px;
-	text-align: left;
-	padding: 3px 6px 3px 3px;
-    }
-
-    #topbar nav {
-	background: black;
-	font-weight: normal;
-	font-size: 15px;
-	text-align: right;
-	padding: 3px 0;
-    }
-}
-
-nav a {
-    padding: 3px 3px 3px 5px;
-    text-decoration: none;
-}    
-
-.subtitle {
-    font-weight: bold;
-    font-size: 16px;
-}
-
-#splash-container {
-    width: 100%;
-    overflow: hidden;
-    margin: 0;
-}
-
-article img {
-    float: left;
-}
-
-#observe-header:hover ~ summary #observe-preview {
-    display: block;
-}
-
-#ambitions-header:hover ~ summary #ambitions-preview {
-    display: block;
-}
-
-#constraints-header:hover ~ summary #constraints-preview {
-    display: block;
-}
-
-#design-header:hover ~ summary #design-preview {
-    display: block;
-}
-
-#metal-header:hover ~ summary #metal-preview {
-    display: block;
-}
-
-#people-header:hover ~ summary #people-preview {
-    display: block;
-}
-
-#simple-header:hover ~ summary #simple-preview {
-    display: block;
 }

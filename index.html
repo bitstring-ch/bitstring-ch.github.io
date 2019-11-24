@@ -1,5 +1,4 @@
 ---
-# front matter tells Jekyll to process Liquid
 layout: default
 title: Bitstring - Home
 ---
@@ -7,25 +6,3 @@ title: Bitstring - Home
   <img id="splash" src="{{ '/assets/images/LW320geel2-cropped.jpg' | relative_url }}" />
   <cite class="tooltip-text">M. C. Escher - Metamorphosis II (1940)</cite>
 </header>
-
-<section id="vision">
-  <div class="tooltip">
-    <blockquote>Quality is a direct experience independent of and prior to intellectual abstractions</blockquote>
-    <cite class="tooltip-text">Robert M. Pirsig - Lila (1991)</cite>
-  </div>
-</section>
-<section id="values">
-  {% for v in site.data.values %}
-  <header id="{{v[0]}}-header">
-    <a href="{{ site.baseurl }}{{ v[0] }}.html">
-      <h2>{{ v[1].title }}</h2>
-      <img src="/assets/images/{{ v[0] }}.jpeg" />
-    </a>
-  </header>
-  {% endfor %}
-  <summary>
-  {% for v in site.data.values %}
-    <p id="{{v[0]}}-preview">{{ v[1].firstLine }}</p>
-  {% endfor %}
-  </summary>
-</section>
