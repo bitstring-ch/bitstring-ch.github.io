@@ -3,6 +3,9 @@ $link-color: white;
 $brick-color: #B0623F;
 $patchwork-color: #878C54;
 $margin-row: 5px;
+$font-big: 20px;
+$font-medium: 17px;
+$font-small: 15px;
 
 * {
     box-sizing: border-box;
@@ -10,6 +13,7 @@ $margin-row: 5px;
 
 html,body {
     margin: 0;
+    height: 100%;
     background: $base-background;
     font-family: 'Roboto', sans-serif;
 }
@@ -35,12 +39,12 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 20px;
+    font-size: $font-big;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 15px;
+    font-size: $font-medium;
     font-weight: normal;
 }
 
@@ -49,18 +53,18 @@ h2 {
     background: black;
     display: flex;
     align-items: center;
-    padding: 0 $margin-row;
+    padding: 2px $margin-row;
 }
 
 #topbar #brand {
-    font-size: 15px;
+    font-size: $font-big;
 }
 
 #topbar nav {
     flex: 1;
     background: black;
     font-weight: normal;
-    font-size: 15px;
+    font-size: $font-medium;
     text-align: right;
     padding: 3px 0;    
 }
@@ -76,9 +80,46 @@ h2 {
 }
 
 #topbar .subtitle {
-    font-size: 15px;
+    font-size: $font-medium;
     text-align: left;
     padding: 0 4px;
+}
+
+#main-content {
+    flex: 1;
+}
+
+#bottombar {
+    font-size: $font-small;
+    color: grey;
+    background: black;
+    display: flex;
+    align-items: center;
+    padding: 0 $margin-row;
+}
+
+#bottombar #legal {
+    text-align: left;
+    flex: 1;
+}
+
+#bottombar #credits {
+    flex: 1;
+    text-align: center;
+}
+
+#bottombar #links {
+    flex: 1;
+    text-align: right;
+}
+
+#bottombar a {
+    margin: 0;
+    padding: 0 3px;
+}
+
+#bottombar img {
+    margin: 3px 0 0 0;
 }
 
 #splash-container {
@@ -95,8 +136,9 @@ h2 {
     transform: translateX(-1200px);
 }
 
-#centered_content {
+#centered-content {
     max-width: 1596px;
+    height: 100%;
     background: $base-background;
     margin: auto;
     display: flex;
@@ -116,7 +158,7 @@ h2 {
     transition: opacity 1s;
     font-family: 'IBM Plex Serif', serif;
     font-style: italic;
-    font-size: 15px;
+    font-size: $font-small;
     color: white;
     background-color: $brick-color;
     border-radius: 6px;
@@ -126,3 +168,4 @@ h2 {
 .tooltip:hover .tooltip-text {
     opacity: 0.8;
 }
+
