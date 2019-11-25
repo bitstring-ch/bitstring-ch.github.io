@@ -1,6 +1,6 @@
 * { box-sizing: border-box; }
 
-html, body { margin: 0; background: #242424; font-family: 'Roboto', sans-serif; }
+html, body { margin: 0; height: 100%; background: #242424; font-family: 'Roboto', sans-serif; }
 
 p, h1, h2, h3 { margin-left: 5px; }
 
@@ -8,29 +8,55 @@ a { text-decoration: none; color: white; }
 
 a.current { color: gray; }
 
+span.separator { margin: 0 3px; }
+
 h1, h2 { margin: 0; padding: 0 5px; color: white; background: black; }
 
 h1 { font-size: 20px; font-weight: bold; }
 
-h2 { font-size: 15px; font-weight: normal; }
+h2 { font-size: 17px; font-weight: normal; }
 
-#topbar { color: white; background: black; display: flex; align-items: center; padding: 0 5px; }
+#topbar { color: white; background: black; display: flex; align-items: center; padding: 2px 5px; }
 
-#topbar #brand { font-size: 15px; }
+#topbar #brand { font-size: 20px; }
 
-#topbar nav { flex: 1; background: black; font-weight: normal; font-size: 15px; text-align: right; padding: 3px 0; }
+#topbar nav { flex: 1; background: black; font-weight: normal; font-size: 17px; text-align: right; padding: 3px 0; }
 
 #topbar nav a { padding: 3px 3px 3px 5px; text-decoration: none; }
 
 .logo { font-family: 'Days One', sans serif; font-weight: normal; }
 
-#topbar .subtitle { font-size: 15px; text-align: left; padding: 0 4px; }
+#topbar .subtitle { font-size: 17px; text-align: left; padding: 0; }
+
+#main-content { flex: 1; }
+
+#bottombar { font-size: 15px; color: grey; background: black; display: flex; align-items: center; padding: 0 5px; }
+
+#bottombar #legal { text-align: left; flex: 1; }
+
+#bottombar #credits { flex: 1; text-align: center; }
+
+#bottombar #links { flex: 1; text-align: right; }
+
+#bottombar a { margin: 0; padding: 0 3px; }
+
+#bottombar img { margin: 3px 0 0 0; }
 
 #splash-container { width: 100%; overflow: hidden; margin: 0; background: black; }
 
 #splash { margin: 0; width: 2400px; margin-left: 50%; transform: translateX(-1200px); }
 
-#centered_content { max-width: 1596px; background: #242424; margin: auto; display: flex; flex-direction: column; }
+#centered-content { max-width: 1596px; height: 100%; background: #242424; margin: auto; display: flex; flex-direction: column; }
+
+article { width: 20em; min-height: 13em; margin: 20px 0; padding: 0; border: solid 4px black; border-left: none; border-right: none; display: flex; flex-direction: column; }
+
+article .tab { height: 1em; }
+
+article div { height: 100%; margin: 0; padding: 0; background-color: black; color: white; font-size: 15px; flex: 1; }
+
+article div p { box-sizing: border-box; margin: 0; padding: 8px 0 0 0; }
+
+article div img { float: left; margin: 8px; width: 2em; }
 
 .tooltip { position: relative; }
 

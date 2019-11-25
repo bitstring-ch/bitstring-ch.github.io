@@ -1,0 +1,69 @@
+scipy:
+  name: "SciPy"
+  title: "Quantitative processing with SciPy"
+  color: "#323232"
+  proposal:
+  - "Rapid prototyping of finance analytics"
+  - "Cloud deployment for batch processing"
+
+scala:
+  name: "Scala"
+  title: "Functional programming on the JVM"
+  color: "#454545"
+  logo: /assets/images/scala-spiral.png
+  proposal:
+  - "Server-side large-scale processing"
+  - "Compatibility with all Java libraries"
+  - "Functional programming"
+  - "Type safety"
+
+serverless:
+  name: "Serverless"
+  title: "Computate on the cloud, rich Javascript client"
+  color: "#893843"
+  proposal:
+  - "Deployment on Google Functions or AWS Lambda"
+  - "Development of rich interface with WebComponents and PureScript"
+
+electron:
+  name: "Electron"
+  title: "Javascript applications for the desktop"
+  color: "#909001"
+  proposal:
+  - "Development of rich interface with WebComponents and PureScript"
+  - "Serverless option"
+  - "Interface with desktop clients"
+
+excel:
+  name: "Excel add-ins"
+  title: "Native Excel experience"
+  color: "#452421"
+  proposal:
+  - "Development of rich interface with WebComponents and PureScript"
+  - "Serverless option"
+
+rust:
+  name: "Rust"
+  title: "Type-safe bare-metal performance"
+  color: "#839211"
+  proposal:
+  - "Desktop or server side heavy processing"
+  - "Low latency: no garbage collection"
+  - "Memory and thread safety"
+
+wasm:
+  name: "WASM"
+  title: "High performance processing in the browser"
+  color: "#123123"
+  proposal:
+  - "Running analytics directly in a browser rich client"
+  - "Powerful visualization embedded"
+  - "Anonymized data in the cloud"
+
+bigquery:
+  name: "Google BigQuery"
+  title: "High-performance on-demand data analysis"
+  color: "#345213"
+  proposal:
+  - "Highly scalable data analysis on the cloud"
+  - "Integration with serverless, Electron or Excel applications"

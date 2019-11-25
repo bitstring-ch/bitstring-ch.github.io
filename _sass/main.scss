@@ -31,6 +31,10 @@ a.current {
     color: gray;
 }
 
+span.separator {
+    margin: 0 3px;
+}
+
 h1, h2 {
     margin: 0;
     padding: 0 $margin-row;
@@ -82,7 +86,7 @@ h2 {
 #topbar .subtitle {
     font-size: $font-medium;
     text-align: left;
-    padding: 0 4px;
+    padding: 0;
 }
 
 #main-content {
@@ -143,6 +147,44 @@ h2 {
     margin: auto;
     display: flex;
     flex-direction: column;
+}
+
+article {
+    width: 20em;
+    min-height: 13em;
+    margin: 20px 0;
+    padding: 0;
+    border: solid 4px black;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+}
+
+article .tab {
+    height: 1em;
+}
+
+article div {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-size: $font-small;
+    flex: 1;
+}
+
+article div p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 8px 0 0 0;
+}
+
+article div img {
+    float: left;
+    margin: 8px;
+    width: 2em;
 }
 
 .tooltip {
