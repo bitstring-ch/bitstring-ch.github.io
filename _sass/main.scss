@@ -161,6 +161,11 @@ article {
     flex-direction: column;
 }
 
+article h2 {
+    padding: 12px 0 4px 0;
+    margin: 0;
+}
+
 article .tab {
     height: 1em;
 }
@@ -175,15 +180,15 @@ article div {
     flex: 1;
 }
 
-article div p {
+article p {
     box-sizing: border-box;
     margin: 0;
-    padding: 8px 0 0 0;
+    padding: 2px $margin-row 0 $margin-row;
 }
 
-article div img {
+article img {
     float: left;
-    margin: 8px;
+    margin: 12px;
     width: 2em;
 }
 
