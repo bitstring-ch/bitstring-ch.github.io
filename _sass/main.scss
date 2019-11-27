@@ -7,10 +7,6 @@ $font-big: 20px;
 $font-medium: 17px;
 $font-small: 15px;
 
-* {
-    box-sizing: border-box;
-}
-
 html,body {
     margin: 0;
     height: 100%;
@@ -127,17 +123,12 @@ h2 {
 }
 
 #splash-container {
-    width: 100%;
-    overflow: hidden;
+    max-width: 1596px;
+    height: 90px;
     margin: 0;
+    border-top: solid 4px black;
+    border-bottom: solid 4px black;
     background: black;
-}
-
-#splash {
-    margin: 0;
-    width: 2400px;
-    margin-left: 50%;
-    transform: translateX(-1200px);
 }
 
 #centered-content {
@@ -215,4 +206,3 @@ article img {
 .tooltip:hover .tooltip-text {
     opacity: 0.8;
 }
-
