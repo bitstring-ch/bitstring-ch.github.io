@@ -2,7 +2,7 @@ var digitWidthPx;
 const digitHeightPx = 13;
 
 const backgroundColor = "black";
-const foregroundColor = "#009128";
+const foregroundColor = "orange";
 
 var canvas, container, ctx;
 var rowNumber, colNumber;
@@ -15,20 +15,20 @@ function initSplash() {
     canvas = document.getElementById("splash");
     container = canvas.parentElement;
     drawSplash();
-    setInterval(updateRandomDigit, 200);
+//    setInterval(updateRandomDigit, 200);
 }
 
 function drawSplash() {
     canvas.width = container.clientWidth;
     canvas.height = container.clientHeight;
     ctx = canvas.getContext("2d");
-    ctx.font = "bold " + digitHeightPx + "pt Monospace";
+    ctx.font = "normal " + digitHeightPx + "pt Monospace";
     const measures = ctx.measureText("0");
     digitWidthPx = Math.ceil(measures.width);
     colNumber = Math.floor(canvas.width / digitWidthPx);
     colMargin = Math.floor((canvas.width - colNumber * digitWidthPx) / 2);
     rowNumber = Math.floor(canvas.height / digitHeightPx);
-    rowMargin = Math.floor((canvas.height - rowNumber * digitHeightPx) / 2) - 1;
+    rowMargin = Math.floor((canvas.height - rowNumber * digitHeightPx) / 2) - 2;
     console.log("Row margin:", rowMargin, ", size:", rowNumber);
     console.log("Column margin:", colMargin, ", size:", colNumber);
     clearCanvas();

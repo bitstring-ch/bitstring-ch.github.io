@@ -1,0 +1,12 @@
+{% assign v = site.data.offers[include.key] %}
+<article>
+  <header class="tab" style="background-color: {{ v.color }}"></header>
+  <div>
+    <img src="{{ v.logo }}" />
+    <h2>{{ v.name }}</h2>
+    <h3>{{ v.title }}</h3>
+    {% for v_line in v.proposal %}
+    <p>{{ v_line }}</p>
+    {% endfor %}
+  </div>
+</article>

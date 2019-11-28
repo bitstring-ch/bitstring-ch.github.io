@@ -4,7 +4,7 @@ p, h1, h2, h3 { margin-left: 5px; }
 
 a { text-decoration: none; color: white; }
 
-a.current { color: gray; }
+a.current { color: grey; }
 
 span.separator { margin: 0 3px; }
 
@@ -14,7 +14,7 @@ h1 { font-size: 20px; font-weight: bold; }
 
 h2 { font-size: 17px; font-weight: normal; }
 
-#topbar { color: white; background: black; display: flex; align-items: center; padding: 2px 5px; }
+#topbar { color: white; background: black; display: flex; align-items: center; padding: 6px 5px; }
 
 #topbar #brand { font-size: 20px; }
 
@@ -40,7 +40,7 @@ h2 { font-size: 17px; font-weight: normal; }
 
 #bottombar img { margin: 3px 0 0 0; }
 
-#splash-container { max-width: 1596px; height: 90px; margin: 0; border-top: solid 4px black; border-bottom: solid 4px black; background: black; }
+#splash-container { max-width: 1596px; height: 90px; margin: 0; border-top: solid 1px orange; border-bottom: solid 1px orange; background: black; }
 
 #centered-content { max-width: 1596px; height: 100%; background: #242424; margin: auto; display: flex; flex-direction: column; }
 

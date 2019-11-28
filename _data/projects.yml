@@ -1,0 +1,39 @@
+algo:
+  name: "Systematic trading"
+  title: "Algorithm backtesting and execution"
+  color: "#323232"
+  proposal:
+  - "Re-design of a backtesting system for long-short multi-factor strategies."
+
+risk:
+  name: "Risk management"
+  title: "Evaluation of risk measures over complex portfolios"
+  color: "#323232"
+  proposal:
+  - "Interfacing with position keeping and portfolio management tools, we
+     developed personalised stress tests and scenario matrices, with cloud-based
+     concurrent evaluation and advanced visualisation options."
+
+pricing:
+  name: "Derivative pricing"
+  title: "High performance derivative pricing"
+  color: "#323232"
+  proposal:
+  - "Scala implementation of advanced numerical methods for derivative pricing."
+  - "High-performance equity volatility derivatives evaluation on AWS."
+
+credit-pricing:
+  name: "Credit pricing"
+  
+bond-risk:
+  name: "Bond realtime risk"
+  title: "Front-end risk for bond trading"
+  color: "#323232"
+  proposal:
+  - "Development and maintenance of a realtime application for risk evaluation
+     on a set of credit products for a global bank."
+
+
+execution:
+  name: "Bond trade execution"
+  title: 
