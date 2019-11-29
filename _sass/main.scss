@@ -2,20 +2,16 @@ $base-background: #242424;
 $link-color: white;
 $brick-color: #B0623F;
 $patchwork-color: #878C54;
-$margin-row: 5px;
-$font-big: 20px;
-$font-medium: 17px;
-$font-small: 15px;
+$margin-row: 6px;
+$font-big: 14pt;
+$font-medium: 12pt;
+$font-small: 10pt;
 
 html,body {
     margin: 0;
     height: 100%;
     background: $base-background;
     font-family: 'Roboto', sans-serif;
-}
-
-p,h1,h2,h3 {
-    margin-left: $margin-row;
 }
 
 a {
@@ -32,20 +28,17 @@ span.separator {
 }
 
 h1, h2 {
-    margin: 0;
     padding: 0 $margin-row;
     color: white;
-    background: black;
 }
 
 h1 {
+    margin: 20px 0 16px 0;
     font-size: $font-big;
-    font-weight: bold;
 }
 
 h2 {
     font-size: $font-medium;
-    font-weight: normal;
 }
 
 #topbar {
@@ -87,6 +80,12 @@ h2 {
 
 #main-content {
     flex: 1;
+}
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #bottombar {
@@ -141,20 +140,43 @@ h2 {
 }
 
 article {
-    width: 20em;
+    width: 24em;
     min-height: 13em;
-    margin: 20px 0;
+    margin: 8px $margin-row;
     padding: 0;
-    border: solid 4px black;
-    border-left: none;
-    border-right: none;
+    border: none;
     display: flex;
     flex-direction: column;
 }
 
-article h2 {
-    padding: 12px 0 4px 0;
+article header {
+    display: flex;
+}
+
+article img {
+    margin: 8px;
+    flex: 0 0 32px;
+}
+
+article header div {
+    display: flex;
+    flex-direction: column;
+    height: 48px;
+    justify-content: center;
+}
+
+article h1 {
+    font-family: 'Days One', sans serif;
+    font-size: $font-medium;
     margin: 0;
+    padding: 0 12px;
+}
+
+article h2 {
+    font-size: $font-medium;
+    font-style: normal;
+    padding: 12px 0 4px 0;
+    margin: $margin-row;
 }
 
 article .tab {
@@ -175,12 +197,6 @@ article p {
     box-sizing: border-box;
     margin: 0;
     padding: 2px $margin-row 0 $margin-row;
-}
-
-article img {
-    float: left;
-    margin: 12px;
-    width: 2em;
 }
 
 .tooltip {

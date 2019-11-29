@@ -1,25 +1,29 @@
-algo:
-  name: "Systematic trading"
-  title: "Algorithm backtesting and execution"
-  color: "#323232"
-  proposal:
-  - "We can help with all the stages of systematic trading, from data gathering and 
-     cleaning to execution system and performance evaluation."
+custom:
+  name: "Custom development"
+  title: "From requirement analysis to product"
+  color: "#323210"
+  logo: /assets/images/icon-bullet-list-32px.png
+  text:
+  - "Technical blueprint and proof-of-concept."
+  - "Quick iteration cycles and total transparency."
+  - "Vast array of technologies available."
+  
+mentoring:
+  name: "Training and mentoring"
+  title: "Help your team evolve"
+  color: "#FF00FF"
+  logo: /assets/images/icon-team-32px.png
+  text:
+  - "Training on specific technologies or paradigms."
+  - "Mentoring before inception or during a project fase."
+  - "Assess your team and identify development opportunities."
 
-risk:
-  name: "Risk management"
-  title: "Evaluation of risk measures over complex portfolios"
+project:
+  name: "Technical leadership"
+  title: "Secure success in a critical development project"
   color: "#323232"
-  proposal:
-  - "Interfacing with position keeping and portfolio management tools, we can
-     develop personalised stress tests and scenario matrices, with cloud-based
-     concurrent evaluation and advanced visualisation options."
-
-pricing:
-  name: "Derivative pricing"
-  title: "High performance derivative pricing"
-  color: "#323232"
-  proposal:
-  - "Scala implementation of advanced numerical methods for derivative pricing."
-  - "Experience with high-performance equity volatility derivatives evaluation on AWS."
-
+  logo: /assets/images/icon-leader-32px.png
+  text:
+  - "Help developing a technical blueprint."
+  - "Periodical meetings with development team and stakeholders."
+  - "Hands-on troubleshooting."

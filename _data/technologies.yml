@@ -2,7 +2,7 @@ scipy:
   name: "SciPy"
   title: "Quantitative processing with SciPy"
   color: "#323232"
-  proposal:
+  text:
   - "Rapid prototyping of finance analytics"
   - "Cloud deployment for batch processing"
 
@@ -11,7 +11,7 @@ scala:
   title: "Functional programming on the JVM"
   color: "#454545"
   logo: /assets/images/scala-spiral.png
-  proposal:
+  text:
   - "Scala brings the benefits
      of an expressive and rich type system and functional programming to the Java
      ecosystem."
@@ -20,7 +20,7 @@ serverless:
   name: "Serverless"
   title: "Computate on the cloud, rich Javascript client"
   color: "#893843"
-  proposal:
+  text:
   - "Deployment on Google Functions or AWS Lambda"
   - "Development of rich interface with WebComponents and PureScript"
 
@@ -28,7 +28,7 @@ electron:
   name: "Electron"
   title: "Javascript applications for the desktop"
   color: "#909001"
-  proposal:
+  text:
   - "Development of rich interface with WebComponents and PureScript"
   - "Serverless option"
   - "Interface with desktop clients"
@@ -37,7 +37,7 @@ excel:
   name: "Excel add-ins"
   title: "Native Excel experience"
   color: "#452421"
-  proposal:
+  text:
   - "Development of rich interface with WebComponents and PureScript"
   - "Serverless option"
 
@@ -45,7 +45,7 @@ rust:
   name: "Rust"
   title: "Type-safe bare-metal performance"
   color: "#839211"
-  proposal:
+  text:
   - "Desktop or server side heavy processing"
   - "Low latency: no garbage collection"
   - "Memory and thread safety"
@@ -54,7 +54,7 @@ wasm:
   name: "WASM"
   title: "High performance processing in the browser"
   color: "#123123"
-  proposal:
+  text:
   - "Running analytics directly in a browser rich client"
   - "Powerful visualization embedded"
   - "Anonymized data in the cloud"
@@ -63,6 +63,6 @@ bigquery:
   name: "Google BigQuery"
   title: "High-performance on-demand data analysis"
   color: "#345213"
-  proposal:
+  text:
   - "Highly scalable data analysis on the cloud"
   - "Integration with serverless, Electron or Excel applications"
