@@ -1,5 +1,5 @@
 var digitWidthPx;
-const digitHeightPx = 13;
+const fontSizePx = 14;
 
 const backgroundColor = "black";
 const foregroundColor = "orange";
@@ -15,20 +15,19 @@ function initSplash() {
     canvas = document.getElementById("splash");
     container = canvas.parentElement;
     drawSplash();
-//    setInterval(updateRandomDigit, 200);
 }
 
 function drawSplash() {
     canvas.width = container.clientWidth;
     canvas.height = container.clientHeight;
     ctx = canvas.getContext("2d");
-    ctx.font = "normal " + digitHeightPx + "pt Monospace";
+    ctx.font = "normal " + fontSizePx + "pt Monospace";
     const measures = ctx.measureText("0");
     digitWidthPx = Math.ceil(measures.width);
     colNumber = Math.floor(canvas.width / digitWidthPx);
-    colMargin = Math.floor((canvas.width - colNumber * digitWidthPx) / 2);
-    rowNumber = Math.floor(canvas.height / digitHeightPx);
-    rowMargin = Math.floor((canvas.height - rowNumber * digitHeightPx) / 2) - 2;
+    colMargin = (canvas.width - colNumber * digitWidthPx)/2.0;
+    rowNumber = Math.floor(canvas.height / fontSizePx);
+    rowMargin = (canvas.height - rowNumber * fontSizePx)/2.0;
     console.log("Row margin:", rowMargin, ", size:", rowNumber);
     console.log("Column margin:", colMargin, ", size:", colNumber);
     clearCanvas();
@@ -42,23 +41,13 @@ function clearCanvas() {
 
 function drawRandomDigits() {
     ctx.fillStyle = foregroundColor;
-    ctx.textBaseline = "top";
+    ctx.textBaseline = "middle";
     for (var row = 0; row < rowNumber; row++) {
 	for (var col = 0; col < colNumber; col++) {
 	    const r = Math.floor(Math.random() * 2).toString();
 	    const x = colMargin + col * digitWidthPx;
-	    const y = rowMargin + row * digitHeightPx;
+	    const y = rowMargin + (row + 0.5) * fontSizePx;
 	    ctx.fillText(r, x, y);
 	}
     }
 }
-
-function updateRandomDigit() {
-    const r = Math.floor(Math.random() * 2).toString();
-    const x = colMargin + Math.floor(Math.random() * colNumber) * digitWidthPx;
-    const y = rowMargin + Math.floor(Math.random() * rowNumber) * digitHeightPx;
-    ctx.fillStyle = backgroundColor;
-    ctx.fillRect(x, y + 1, digitWidthPx, digitHeightPx - 2);
-    ctx.fillStyle = foregroundColor;
-    ctx.fillText(r, x, y);
-}    
