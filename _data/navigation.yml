@@ -1,9 +1,11 @@
 - name: Home
   link: /
-- name: Services
-  link: /services.html
+- name: Offer
+  link: /offer.html
 - name: Technology
   link: /technology.html
+- name: Background
+  link: /background.html
 - name: Contact
   link: /contact.html
   

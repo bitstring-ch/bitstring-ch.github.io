@@ -8,7 +8,7 @@ span.separator { margin: 0 3px; }
 
 h1, h2 { padding: 0 6px; color: white; }
 
-h1 { margin: 20px 0 16px 0; font-size: 14pt; }
+h1 { font-family: 'Days One', sans serif; font-size: 12pt; margin: 20px 0 16px 0; }
 
 h2 { font-size: 12pt; }
 
@@ -44,7 +44,7 @@ h2 { font-size: 12pt; }
 
 #centered-content { max-width: 1596px; height: 100%; background: #242424; margin: auto; display: flex; flex-direction: column; }
 
-article { width: 24em; min-height: 13em; margin: 8px 6px; padding: 0; border: none; display: flex; flex-direction: column; }
+article { max-width: 40em; min-height: 8em; margin: 8px 6px; padding: 0; border: none; display: flex; flex-direction: column; }
 
 article header { display: flex; }
 
@@ -61,6 +61,12 @@ article .tab { height: 1em; }
 article div { height: 100%; margin: 0; padding: 0; background-color: black; color: white; font-size: 10pt; flex: 1; }
 
 article p { box-sizing: border-box; margin: 0; padding: 2px 6px 0 6px; }
+
+.detail { padding: 0 6px; height: 100%; background-color: grey; color: #242424; }
+
+.detail h2 { margin: 0; padding: 0; font-weight: bold; color: #242424; }
+
+.detail p { font-size: 10pt; color: #242424; }
 
 .tooltip { position: relative; }
 

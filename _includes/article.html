@@ -3,11 +3,8 @@
   <div>
     <header>
       <img src="{{ ad.logo }}" />
-      <div style="background-color: {{ ad.color }}">
-	<h1>{{ ad.name }}</h1>
-      </div>
+      <h1>{{ ad.name }}</h1>
     </header>
-    <h2>{{ ad.title }}</h2>
     {% for ad_line in ad.text %}
     <p>{{ ad_line }}</p>
     {% endfor %}
