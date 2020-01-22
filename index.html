@@ -13,20 +13,6 @@ title: Bitstring - Home
     {% include offers.html key=offer-key %}
     {% endfor %}
   </div>
-  <h1>Success stories</h1>
-  <div class="main-section">
-    {% for project in site.data.projects %}
-    {% assign project-key = project[0] %}
-    {% include projects.html key=project-key %}
-    {% endfor %}
-  </div>
-  <h1>Technologies</h1>
-  <div class="main-section">
-    {% for technology in site.data.technologies %}
-    {% assign technology-key = technology[0] %}
-    {% include technologies.html key=technology-key %}
-    {% endfor %}
-  </div>
 </section>
 <footer id="bottombar">
   <div id="legal">Bistring GmbH - Zurich - CH</div>
