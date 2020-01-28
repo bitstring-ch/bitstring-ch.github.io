@@ -86,7 +86,7 @@ h2 {
 .main-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #bottombar {
@@ -141,9 +141,8 @@ h2 {
 }
 
 article {
-    max-width: 40em;
     min-height: 8em;
-    margin: 8px $margin-row;
+    margin: 6px 0;
     padding: 0;
     border: none;
     display: flex;
@@ -242,4 +241,22 @@ article p {
 
 .tooltip:hover .tooltip-text {
     opacity: 0.8;
+}
+
+@media only screen and (max-width: 800px) {
+    article {
+	width: 100%;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+    article {
+	width: 49%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    article {
+	width: 33%;
+    }
 }
