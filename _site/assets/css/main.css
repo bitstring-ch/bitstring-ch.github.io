@@ -46,7 +46,7 @@ h2 { font-size: 12pt; }
 
 article { max-width: 40em; min-height: 8em; margin: 8px 6px; padding: 0; border: none; display: flex; flex-direction: column; }
 
-article header { display: flex; }
+article header { display: flex; align-items: center; }
 
 article img { margin: 8px; flex: 0 0 32px; }
 
