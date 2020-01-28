@@ -1,7 +1,7 @@
 custom:
   name: "Custom development"
   title: "From requirement analysis to product"
-  color: "#323210"
+  class: bg1
   logo: /assets/images/icon-bullet-list-32px.png
   text:
   - "Technical blueprint and proof-of-concept."
@@ -11,7 +11,7 @@ custom:
 mentoring:
   name: "Training and mentoring"
   title: "Help your team evolve"
-  color: "#FF00FF"
+  class: bg2
   logo: /assets/images/icon-team-32px.png
   text:
   - "Training on specific technologies or paradigms."
@@ -21,7 +21,7 @@ mentoring:
 project:
   name: "Technical leadership"
   title: "Secure success in a critical development project"
-  color: "#323232"
+  class: bg3
   logo: /assets/images/icon-leader-32px.png
   text:
   - "Help developing a technical blueprint."

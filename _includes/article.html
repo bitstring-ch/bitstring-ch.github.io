@@ -1,12 +1,14 @@
 {% assign v = include.article-data %}
 <article>
   <div>
-    <header style="background-color: {{ ad.color }}">
+    <header class="{{ ad.class }}">
       <img src="{{ ad.logo }}" />
       <h1>{{ ad.name }}</h1>
     </header>
-    {% for ad_line in ad.text %}
-    <p>{{ ad_line }}</p>
-    {% endfor %}
+    <ul>
+      {% for ad_line in ad.text %}
+      <li>{{ ad_line }}</li>
+      {% endfor %}
+    </ul>    
   </div>
 </article>

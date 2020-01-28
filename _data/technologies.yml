@@ -1,7 +1,7 @@
 scala:
   name: "Scala"
   title: "Functional programming on the JVM"
-  color: "#454545"
+  class: bg4
   logo: /assets/images/scala-logo.png
   text:
   - "The most advanced industry-grade backend language for the Java ecosystem"
@@ -11,7 +11,7 @@ scala:
 python:
   name: "Python"
   title: "Research and fast time-to-market"
-  color: "#454545"
+  class: bg5
   logo: /assets/images/python-logo.png
   text:
   - "A rich common ground for scientists and programmers"
@@ -21,16 +21,16 @@ python:
 serverless:
   name: "Serverless"
   title: "Computate on the cloud, rich Javascript client"
-  color: "#893843"
+  class: bg1
   logo: /assets/images/lambda-logo.png
   text:
   - "Deployment on Google Functions or AWS Lambda"
   - "Development of rich applications on the browser"
 
 excel:
-  name: "Excel add-ins"
+  name: "Excel"
   title: "Native Excel experience"
-  color: "#452421"
+  class: bg2
   logo: /assets/images/excel-logo.png
   text:
   - "Development of rich interface with WebComponents and PureScript"
@@ -39,7 +39,7 @@ excel:
 rust:
   name: "Rust"
   title: "Type-safe bare-metal performance"
-  color: "#839211"
+  class: bg3
   logo: /assets/images/rust-logo.png
   text:
   - "Desktop or server side heavy processing"

@@ -7,21 +7,21 @@ title: Bitstring - Home
   <script type="text/javascript" src="assets/js/splash.js"></script>
 </header>
 <section id="main-content">
-  <h1>Offer</h1>
+  <h1 class="topic">Offer</h1>
   <div class="main-section">
     {% for offer in site.data.offers %}
     {% assign offer-key = offer[0] %}
     {% include offers.html key=offer-key %}
     {% endfor %}
   </div>
-  <h1>Technology</h1>
+  <h1 class="topic">Technology</h1>
   <div class="main-section">
     {% for technology in site.data.technologies %}
     {% assign technology-key = technology[0] %}
     {% include technologies.html key=technology-key %}
     {% endfor %}
   </div>
-  <h1>Business Domains</h1>
+  <h1 class="topic">Business Domains</h1>
   <div class="main-section">
     {% for domain in site.data.domains %}
     {% assign domain-key = domain[0] %}

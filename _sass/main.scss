@@ -1,11 +1,13 @@
 $base-background: #242424;
 $link-color: white;
-$brick-color: #B0623F;
-$patchwork-color: #878C54;
 $margin-row: 6px;
-$font-big: 14pt;
-$font-medium: 12pt;
+$font-big: 15pt;
+$font-medium: 13pt;
 $font-small: 10pt;
+$light-color: grey;
+$dark-color: black;
+$light-background: grey;
+$dark-background: black;
 
 html,body {
     margin: 0;
@@ -20,7 +22,7 @@ a {
 }
 
 a.current {
-    color: grey;
+    color: $light-color;
 }
 
 span.separator {
@@ -32,10 +34,14 @@ h1, h2 {
     color: white;
 }
 
-h1 {
-    font-family: 'Days One', sans serif;
+h1.topic {
+    font-family: "Days One", sans serif;
+    font-weight: bold;
     font-size: $font-medium;
     margin: 20px 0 16px 0;
+    padding: 3px $margin-row;
+    background-color: $light-background;
+    color: $dark-color;
 }
 
 h2 {
@@ -44,7 +50,7 @@ h2 {
 
 #topbar {
     color: white;
-    background: black;
+    background: $dark-background;
     display: flex;
     align-items: center;
     padding: 6px $margin-row;
@@ -56,7 +62,7 @@ h2 {
 
 #topbar nav {
     flex: 1;
-    background: black;
+    background: $dark-background;
     font-weight: normal;
     font-size: $font-medium;
     text-align: right;
@@ -91,8 +97,8 @@ h2 {
 
 #bottombar {
     font-size: $font-small;
-    color: grey;
-    background: black;
+    color: $light-color;
+    background: $dark-background;
     display: flex;
     align-items: center;
     padding: 0 $margin-row;
@@ -128,7 +134,7 @@ h2 {
     margin: 0;
     border-top: solid 1px orange;
     border-bottom: solid 1px orange;
-    background: black;
+    background: $dark-background;
 }
 
 #centered-content {
@@ -167,17 +173,13 @@ article header div {
 }
 
 article h1 {
-    font-family: 'Days One', sans serif;
+    font-family: Roboto, sans serif;
+    background-color: inherit;
+    color: $dark-color;
     font-size: $font-medium;
+    font-weight: bold;
     margin: 0;
     padding: 0 12px;
-}
-
-article h2 {
-    font-size: $font-medium;
-    font-style: normal;
-    padding: 12px 0 4px 0;
-    margin: $margin-row;
 }
 
 article .tab {
@@ -188,59 +190,41 @@ article div {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: white;
+    background-color: $light-background;
+    color: $dark-color;
     font-size: $font-small;
     flex: 1;
 }
 
-article p {
+ul {
+    padding-inline-start: 25px;
+    list-style-type: square;
+}
+
+li {
     box-sizing: border-box;
-    margin: 0;
-    padding: 2px $margin-row 0 $margin-row;
-}
-
-.detail {
-    padding: 0 $margin-row;
-    height: 100%;
-    background-color: grey;
-    color: $base-background;
-}
-
-.detail h2 {
-    margin: 0;
+    margin: 0.25em 0;
     padding: 0;
-    font-weight: bold;
-    color: $base-background;
 }
 
-.detail p {
-    font-size: $font-small;
-    color: $base-background;
+.bg1 {
+    background-color: #BEB558;
 }
 
-.tooltip {
-    position: relative;
+.bg2 {
+    background-color: #E8803C;
 }
 
-.tooltip-text {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 1s;
-    font-family: 'IBM Plex Serif', serif;
-    font-style: italic;
-    font-size: $font-small;
-    color: white;
-    background-color: $brick-color;
-    border-radius: 6px;
-    padding: 6px 15px;
+.bg3 {
+    background-color: #BE2E2A;
 }
 
-.tooltip:hover .tooltip-text {
-    opacity: 0.8;
+.bg4 {
+    background-color: #943942;
+}
+
+.bg5 {
+    background-color: #63829E;
 }
 
 @media only screen and (max-width: 800px) {
