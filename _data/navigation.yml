@@ -1,7 +1,7 @@
 - name: Home
   link: /
-- name: Offer
-  link: /offer.html
+- name: People
+  link: /people.html
 - name: Contact
   link: /contact.html
   

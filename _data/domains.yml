@@ -1,0 +1,27 @@
+algo:
+  name: "Systematic trading"
+  title: "Algorithm backtesting and execution"
+  color: "#323232"
+  logo: /assets/images/algo-logo.png
+  text:
+  - "We can help with all the stages of systematic trading, from data gathering and 
+     cleaning to execution system and performance evaluation."
+
+risk:
+  name: "Risk management"
+  title: "Evaluation of risk measures over complex portfolios"
+  color: "#323232"
+  logo: /assets/images/risk-logo.png
+  text:
+  - "Interfacing with position keeping and portfolio management tools, we can
+     develop personalised stress tests and scenario matrices, with cloud-based
+     concurrent evaluation and advanced visualisation options."
+
+pricing:
+  name: "Derivative pricing"
+  title: "High performance derivative pricing"
+  color: "#323232"
+  logo: /assets/images/pricing-logo.png
+  text:
+  - "Scala implementation of advanced numerical methods for derivative pricing."
+  - "Experience with high-performance equity volatility derivatives evaluation on AWS."

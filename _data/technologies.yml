@@ -1,42 +1,37 @@
-scipy:
-  name: "SciPy"
-  title: "Quantitative processing with SciPy"
-  color: "#323232"
-  text:
-  - "Rapid prototyping of finance analytics"
-  - "Cloud deployment for batch processing"
-
 scala:
   name: "Scala"
   title: "Functional programming on the JVM"
   color: "#454545"
-  logo: /assets/images/scala-spiral.png
+  logo: /assets/images/scala-logo.png
   text:
-  - "Scala brings the benefits
-     of an expressive and rich type system and functional programming to the Java
-     ecosystem."
+  - "The most advanced industry-grade backend language for the Java ecosystem"
+  - "Adopted by industry leaders in Finance, Publishing and Social Media"
+  - "Ideal to transition to big-data processing thanks to Spark"
+
+python:
+  name: "Python"
+  title: "Research and fast time-to-market"
+  color: "#454545"
+  logo: /assets/images/python-logo.png
+  text:
+  - "A rich common ground for scientists and programmers"
+  - "The fastest way to go from research to production"
+  - "Ability to run on the cloud as serverless or with PySpark"
 
 serverless:
   name: "Serverless"
   title: "Computate on the cloud, rich Javascript client"
   color: "#893843"
+  logo: /assets/images/lambda-logo.png
   text:
   - "Deployment on Google Functions or AWS Lambda"
-  - "Development of rich interface with WebComponents and PureScript"
-
-electron:
-  name: "Electron"
-  title: "Javascript applications for the desktop"
-  color: "#909001"
-  text:
-  - "Development of rich interface with WebComponents and PureScript"
-  - "Serverless option"
-  - "Interface with desktop clients"
+  - "Development of rich applications on the browser"
 
 excel:
   name: "Excel add-ins"
   title: "Native Excel experience"
   color: "#452421"
+  logo: /assets/images/excel-logo.png
   text:
   - "Development of rich interface with WebComponents and PureScript"
   - "Serverless option"
@@ -45,24 +40,8 @@ rust:
   name: "Rust"
   title: "Type-safe bare-metal performance"
   color: "#839211"
+  logo: /assets/images/rust-logo.png
   text:
   - "Desktop or server side heavy processing"
   - "Low latency: no garbage collection"
   - "Memory and thread safety"
-
-wasm:
-  name: "WASM"
-  title: "High performance processing in the browser"
-  color: "#123123"
-  text:
-  - "Running analytics directly in a browser rich client"
-  - "Powerful visualization embedded"
-  - "Anonymized data in the cloud"
-
-bigquery:
-  name: "Google BigQuery"
-  title: "High-performance on-demand data analysis"
-  color: "#345213"
-  text:
-  - "Highly scalable data analysis on the cloud"
-  - "Integration with serverless, Electron or Excel applications"
