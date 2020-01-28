@@ -10,7 +10,7 @@ algo:
 risk:
   name: "Risk management"
   title: "Evaluation of risk measures over complex portfolios"
-  class: bg5
+  class: bg4
   logo: /assets/images/risk-logo.png
   text:
   - "Interfacing with position keeping and portfolio management tools, we can
@@ -20,7 +20,7 @@ risk:
 pricing:
   name: "Derivative pricing"
   title: "High performance derivative pricing"
-  class: bg1
+  class: bg4
   logo: /assets/images/pricing-logo.png
   text:
   - "Scala implementation of advanced numerical methods for derivative pricing."

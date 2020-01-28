@@ -1,7 +1,7 @@
 custom:
   name: "Custom development"
   title: "From requirement analysis to product"
-  class: bg1
+  class: bg3
   logo: /assets/images/icon-bullet-list-32px.png
   text:
   - "Technical blueprint and proof-of-concept."
@@ -11,7 +11,7 @@ custom:
 mentoring:
   name: "Training and mentoring"
   title: "Help your team evolve"
-  class: bg2
+  class: bg3
   logo: /assets/images/icon-team-32px.png
   text:
   - "Training on specific technologies or paradigms."

@@ -7,14 +7,14 @@ title: Bitstring - Home
   <script type="text/javascript" src="assets/js/splash.js"></script>
 </header>
 <section id="main-content">
-  <h1 class="topic">Offer</h1>
+  <h1 class="topic">Our offer</h1>
   <div class="main-section">
     {% for offer in site.data.offers %}
     {% assign offer-key = offer[0] %}
     {% include offers.html key=offer-key %}
     {% endfor %}
   </div>
-  <h1 class="topic">Technology</h1>
+  <h1 class="topic">Supported technologies</h1>
   <div class="main-section">
     {% for technology in site.data.technologies %}
     {% assign technology-key = technology[0] %}

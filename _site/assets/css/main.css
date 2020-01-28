@@ -2,13 +2,13 @@ html, body { margin: 0; height: 100%; background: #242424; font-family: 'Roboto'
 
 a { text-decoration: none; color: white; }
 
-a.current { color: grey; }
+a.current { color: #B0B0B0; }
 
 span.separator { margin: 0 3px; }
 
 h1, h2 { padding: 0 6px; color: white; }
 
-h1.topic { font-family: "Days One", sans serif; font-weight: bold; font-size: 13pt; margin: 20px 0 16px 0; padding: 3px 6px; background-color: grey; color: black; }
+h1.topic { font-family: Roboto, sans serif; font-weight: normal; font-size: 13pt; margin: 20px 0 10px 0; padding: 3px 6px; background-color: #242424; color: white; }
 
 h2 { font-size: 13pt; }
 
@@ -28,7 +28,7 @@ h2 { font-size: 13pt; }
 
 .main-section { display: flex; flex-wrap: wrap; justify-content: space-between; }
 
-#bottombar { font-size: 10pt; color: grey; background: black; display: flex; align-items: center; padding: 0 6px; }
+#bottombar { font-size: 10pt; color: #B0B0B0; background: black; display: flex; align-items: center; margin: 10px 0 0 0; padding: 0 6px; }
 
 #bottombar #legal { text-align: left; flex: 1; }
 
@@ -46,31 +46,27 @@ h2 { font-size: 13pt; }
 
 article { min-height: 8em; margin: 6px 0; padding: 0; border: none; display: flex; flex-direction: column; }
 
-article header { display: flex; align-items: center; }
+article header { display: flex; align-items: center; border-bottom: 4px solid #242424; }
 
-article img { margin: 8px; flex: 0 0 32px; }
+article img { margin: 5px; flex: 0 0 32px; }
 
-article header div { display: flex; flex-direction: column; height: 48px; justify-content: center; }
+article h1 { font-family: Roboto, sans serif; background-color: inherit; color: #242424; font-size: 13pt; font-weight: bold; margin: 0; padding: 0 12px; }
 
-article h1 { font-family: Roboto, sans serif; background-color: inherit; color: black; font-size: 13pt; font-weight: bold; margin: 0; padding: 0 12px; }
-
-article .tab { height: 1em; }
-
-article div { height: 100%; margin: 0; padding: 0; background-color: grey; color: black; font-size: 10pt; flex: 1; }
+article div { height: 100%; margin: 0; padding: 0; background-color: #9A9e86; color: black; font-family: Merriweather, serif; font-size: 10pt; flex: 1; }
 
 ul { padding-inline-start: 25px; list-style-type: square; }
 
-li { box-sizing: border-box; margin: 0.25em 0; padding: 0; }
+li { box-sizing: border-box; margin: 0.2em 0; padding: 0; }
 
-.bg1 { background-color: #BEB558; }
+.bg1 { background-color: #63829E; }
 
-.bg2 { background-color: #E8803C; }
+.bg2 { background-color: #D37537; }
 
 .bg3 { background-color: #BE2E2A; }
 
-.bg4 { background-color: #943942; }
+.bg4 { background-color: #BEB558; }
 
-.bg5 { background-color: #63829E; }
+.bg5 { background-color: #943942; }
 
 @media only screen and (max-width: 800px) { article { width: 100%; } }
 

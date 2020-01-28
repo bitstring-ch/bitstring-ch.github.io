@@ -1,13 +1,14 @@
 $base-background: #242424;
-$link-color: white;
 $margin-row: 6px;
 $font-big: 15pt;
 $font-medium: 13pt;
 $font-small: 10pt;
-$light-color: grey;
+$light-color: white;
+$dim-color: #B0B0B0;
 $dark-color: black;
-$light-background: grey;
+$light-background: #9A9e86;
 $dark-background: black;
+$link-color: $light-color;
 
 html,body {
     margin: 0;
@@ -22,7 +23,7 @@ a {
 }
 
 a.current {
-    color: $light-color;
+    color: $dim-color;
 }
 
 span.separator {
@@ -31,17 +32,17 @@ span.separator {
 
 h1, h2 {
     padding: 0 $margin-row;
-    color: white;
+    color: $light-color;
 }
 
 h1.topic {
-    font-family: "Days One", sans serif;
-    font-weight: bold;
+    font-family: Roboto, sans serif;
+    font-weight: normal;
     font-size: $font-medium;
-    margin: 20px 0 16px 0;
+    margin: 20px 0 10px 0;
     padding: 3px $margin-row;
-    background-color: $light-background;
-    color: $dark-color;
+    background-color: $base-background;
+    color: $light-color;
 }
 
 h2 {
@@ -49,7 +50,7 @@ h2 {
 }
 
 #topbar {
-    color: white;
+    color: $light-color;
     background: $dark-background;
     display: flex;
     align-items: center;
@@ -97,10 +98,11 @@ h2 {
 
 #bottombar {
     font-size: $font-small;
-    color: $light-color;
+    color: $dim-color;
     background: $dark-background;
     display: flex;
     align-items: center;
+    margin: 10px 0 0 0;
     padding: 0 $margin-row;
 }
 
@@ -158,32 +160,22 @@ article {
 article header {
     display: flex;
     align-items: center;
+    border-bottom: 4px solid $base-background;
 }
 
 article img {
-    margin: 8px;
+    margin: 5px;
     flex: 0 0 32px;
-}
-
-article header div {
-    display: flex;
-    flex-direction: column;
-    height: 48px;
-    justify-content: center;
 }
 
 article h1 {
     font-family: Roboto, sans serif;
     background-color: inherit;
-    color: $dark-color;
+    color: $base-background;
     font-size: $font-medium;
     font-weight: bold;
     margin: 0;
     padding: 0 12px;
-}
-
-article .tab {
-    height: 1em;
 }
 
 article div {
@@ -192,6 +184,7 @@ article div {
     padding: 0;
     background-color: $light-background;
     color: $dark-color;
+    font-family: Merriweather, serif;
     font-size: $font-small;
     flex: 1;
 }
@@ -203,16 +196,16 @@ ul {
 
 li {
     box-sizing: border-box;
-    margin: 0.25em 0;
+    margin: 0.2em 0;
     padding: 0;
 }
 
 .bg1 {
-    background-color: #BEB558;
+    background-color: #63829E;
 }
 
 .bg2 {
-    background-color: #E8803C;
+    background-color: #D37537;
 }
 
 .bg3 {
@@ -220,11 +213,11 @@ li {
 }
 
 .bg4 {
-    background-color: #943942;
+    background-color: #BEB558;
 }
 
 .bg5 {
-    background-color: #63829E;
+    background-color: #943942;
 }
 
 @media only screen and (max-width: 800px) {
