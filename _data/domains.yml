@@ -4,8 +4,8 @@ algo:
   class: bg4
   logo: /assets/images/algo-logo.png
   text:
-  - "We can help with all the stages of systematic trading, from data gathering and 
-     cleaning to execution system and performance evaluation."
+  - "Experience with all the stages of systematic trading, from data gathering and 
+     cleaning to execution system and performance evaluation"
 
 risk:
   name: "Risk management"
@@ -15,7 +15,7 @@ risk:
   text:
   - "Interfacing with position keeping and portfolio management tools, we can
      develop personalised stress tests and scenario matrices, with cloud-based
-     concurrent evaluation and advanced visualisation options."
+     concurrent evaluation and advanced visualisation options"
 
 pricing:
   name: "Derivative pricing"
@@ -23,5 +23,5 @@ pricing:
   class: bg4
   logo: /assets/images/pricing-logo.png
   text:
-  - "Scala implementation of advanced numerical methods for derivative pricing."
-  - "Experience with high-performance equity volatility derivatives evaluation on AWS."
+  - "Scala implementation of advanced numerical methods for derivative pricing"
+  - "Experience with high-performance derivatives evaluation with cloud parallel processing"

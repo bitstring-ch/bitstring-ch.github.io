@@ -30,12 +30,9 @@ span.separator {
     margin: 0 3px;
 }
 
-h1, h2 {
+h1 {
     padding: 0 $margin-row;
     color: $light-color;
-}
-
-h1.topic {
     font-family: Roboto, sans serif;
     font-weight: normal;
     font-size: $font-medium;
@@ -43,10 +40,6 @@ h1.topic {
     padding: 3px $margin-row;
     background-color: $base-background;
     color: $light-color;
-}
-
-h2 {
-    font-size: $font-medium;
 }
 
 #topbar {
@@ -80,6 +73,12 @@ h2 {
     font-weight: normal;
 }
 
+.portrait {
+    float: left;
+    padding: 6px 10px 0 0;
+    width: 120px;
+}
+
 #topbar .subtitle {
     font-size: $font-medium;
     text-align: left;
@@ -94,6 +93,13 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.text {
+    background-color: $light-background;
+    color: $dark-color;
+    font-family: Merriweather, serif;
+    font-size: $font-small;
 }
 
 #bottombar {
@@ -160,11 +166,11 @@ article {
 article header {
     display: flex;
     align-items: center;
-    border-bottom: 4px solid $base-background;
+    border-bottom: 3px solid $base-background;
 }
 
 article img {
-    margin: 5px;
+    margin: 3px 5px;
     flex: 0 0 32px;
 }
 
@@ -182,10 +188,6 @@ article div {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: $light-background;
-    color: $dark-color;
-    font-family: Merriweather, serif;
-    font-size: $font-small;
     flex: 1;
 }
 
@@ -198,6 +200,13 @@ li {
     box-sizing: border-box;
     margin: 0.2em 0;
     padding: 0;
+}
+
+.base-text {
+    height: 100%;
+    color: $dim-color;
+    font-family: Merriweather, serif;
+    margin: 0 $margin-row;
 }
 
 .bg1 {
