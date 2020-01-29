@@ -1,4 +1,4 @@
-html, body { margin: 0; height: 100%; background: #242424; font-family: 'Roboto', sans-serif; }
+html, body { margin: 0; background: #242424; font-family: 'Roboto', sans-serif; display: flex; flex-direction: column; }
 
 a { text-decoration: none; color: white; }
 
@@ -8,7 +8,7 @@ span.separator { margin: 0 3px; }
 
 h1 { padding: 0 6px; color: white; font-family: Roboto, sans serif; font-weight: normal; font-size: 13pt; margin: 20px 0 10px 0; padding: 3px 6px; background-color: #242424; color: white; }
 
-#topbar { min-height: 26px; color: white; background: black; display: flex; align-items: center; padding: 6px 6px; }
+#topbar { color: white; background: black; display: flex; align-items: center; padding: 6px 6px; }
 
 #topbar #brand { font-size: 15pt; }
 
@@ -28,7 +28,7 @@ h1 { padding: 0 6px; color: white; font-family: Roboto, sans serif; font-weight:
 
 .text { background-color: #9A9e86; color: black; font-family: Merriweather, serif; font-size: 10pt; }
 
-#bottombar { min-height: 38px; font-size: 10pt; color: #B0B0B0; background: black; display: flex; align-items: center; margin: 10px 0 0 0; padding: 0 6px; }
+#bottombar { font-size: 10pt; color: #B0B0B0; background: black; display: flex; align-items: center; margin: 10px 0 0 0; padding: 0 6px; }
 
 #bottombar #legal { text-align: left; flex: 1; }
 
