@@ -70,6 +70,14 @@ h1 {
     text-decoration: none;
 }    
 
+#contact-splash {
+    margin: 0;
+    padding: 0;
+    width: 102%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
 .logo {
     font-family: 'Days One', sans serif;
     font-weight: normal;

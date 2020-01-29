@@ -16,6 +16,8 @@ h1 { padding: 0 6px; color: white; font-family: Roboto, sans serif; font-weight:
 
 #topbar nav a { padding: 3px 3px 3px 5px; text-decoration: none; }
 
+#contact-splash { margin: 0; padding: 0; width: 102%; margin-left: 50%; transform: translateX(-50%); }
+
 .logo { font-family: 'Days One', sans serif; font-weight: normal; }
 
 .portrait { float: left; padding: 6px 10px 0 0; width: 120px; }
