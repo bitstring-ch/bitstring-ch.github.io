@@ -1,2 +1,0 @@
-metal.jpeg: https://commons.wikimedia.org/wiki/File:Gears_(20437315996).jpg https://creativecommons.org/publicdomain/zero/1.0/deed.en
-design.jpeg: https://commons.wikimedia.org/wiki/File:1968_Alfa_Romeo_Tipo_33_Stradale.jpg https://creativecommons.org/licenses/by/2.0/deed.en
