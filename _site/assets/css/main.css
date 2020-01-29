@@ -1,4 +1,4 @@
-html, body { height: 100%; margin: 0; background: #242424; font-family: 'Roboto', sans-serif; display: flex; flex-direction: column; }
+html, body { margin: 0; background: #242424; font-family: 'Roboto', sans-serif; display: flex; flex-direction: column; }
 
 a { text-decoration: none; color: white; }
 
@@ -8,15 +8,15 @@ span.separator { margin: 0 3px; }
 
 h1 { padding: 0 6px; color: white; font-family: Roboto, sans serif; font-weight: normal; font-size: 13pt; margin: 20px 0 10px 0; padding: 3px 6px; background-color: #242424; color: white; }
 
-#topbar { color: white; background: black; display: flex; align-items: center; padding: 6px 6px; }
+#topbar { color: white; background: black; display: flex; justify-content: space-between; align-items: center; padding: 6px 6px; }
 
-#topbar #brand { font-size: 15pt; }
+#brand { font-size: 15pt; }
 
-#topbar nav { flex: 1; background: black; font-weight: normal; font-size: 13pt; text-align: right; padding: 3px 0; }
+nav { flex: 1; display: flex; justify-content: flex-end; background: black; font-weight: normal; font-size: 13pt; text-align: right; padding: 3px 0; }
 
-#topbar nav a { padding: 3px 3px 3px 5px; text-decoration: none; }
+nav a { padding: 3px 3px 3px 5px; text-decoration: none; }
 
-#contact-splash { margin: 0; padding: 0; width: 102%; margin-left: 50%; transform: translateX(-50%); }
+#contact-splash { margin: 0; padding: 0; width: 100%; margin-left: 50%; transform: translateX(-50%); }
 
 .logo { font-family: 'Days One', sans serif; font-weight: normal; }
 
@@ -72,7 +72,11 @@ li { box-sizing: border-box; margin: 0.2em 0; padding: 0; }
 
 .bg5 { background-color: #943942; }
 
-@media only screen and (max-width: 800px) { article { width: 100%; } }
+@media only screen and (max-width: 800px) { article { width: 100%; }
+  #topbar { flex-direction: column; align-items: center; }
+  #brand { text-align: center; }
+  nav { margin: 10px 0 0 0; padding: 8px 0 3px 0; border-top: 1px solid white; width: 100%; justify-content: center; }
+  nav a { font-size: 15pt; padding: 0 0.5em; } }
 
 @media only screen and (min-width: 800px) and (max-width: 1200px) { article { width: 49%; } }
 
